@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Ruby Red Kanchipuram Silk Saree — Handwoven pure silk with intricate gold zari border. Shop Vastraluu.">
+    <title>Ruby Red Kanchipuram Silk Saree | Vastraluu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="brand-name">Vastraluu</span>
+                <span class="brand-sub">Silk & Sarees</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="nav-icon"><svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7" />
+                        <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                    </svg></div>
+                <a href="#" class="nav-icon"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></a>
+                <a href="cart.html" class="nav-icon"><svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="badge cart-badge" style="display:none;">0</span></a>
+                <a href="#" class="nav-login">Login / Register</a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-nav">
+        <span class="mobile-nav-close">✕</span>
+        <a href="index.html">Home</a><a href="shop.html">Collections</a><a href="about.html">About</a><a
+            href="contact.html">Contact</a><a href="cart.html">Shopping Bag</a>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb" id="product-breadcrumb">
+            <a href="index.html">Home</a><span>&rsaquo;</span>
+            <a href="shop.html">Collections</a><span>&rsaquo;</span>
+            <span id="breadcrumb-category" style="color:var(--medium-text);">Loading...</span><span>&rsaquo;</span>
+            <span id="breadcrumb-product-name" style="color:var(--dark-text);">Loading...</span>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAIL -->
+    <div class="product-detail-layout">
+
+        <!-- LEFT — Gallery -->
+        <div class="gallery-area">
+            <div class="gallery-main">
+                <img id="main-product-img" src="https://placehold.co/560x747/f5e6cc/8B0000?text=Loading..."
+                    alt="Product Image">
+            </div>
+            <div class="gallery-thumbs" id="gallery-thumbs-container">
+                <!-- Populated by shopify.js -->
+            </div>
+        </div>
+
+        <!-- RIGHT — Product Info -->
+        <div class="product-info-area">
+            <div class="product-detail-category" id="product-type-label">Loading...</div>
+            <h1 class="product-detail-name" id="product-title-el">Loading product...</h1>
+
+            <div class="product-detail-rating">
+                <div class="stars">
+                    <svg viewBox="0 0 24 24">
+                        <polygon
+                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                    </svg>
+                    <svg viewBox="0 0 24 24">
+                        <polygon
+                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                    </svg>
+                    <svg viewBox="0 0 24 24">
+                        <polygon
+                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                    </svg>
+                    <svg viewBox="0 0 24 24">
+                        <polygon
+                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                    </svg>
+                    <svg viewBox="0 0 24 24" style="fill:none; stroke:var(--gold); stroke-width:1.5;">
+                        <polygon
+                            points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                    </svg>
+                    <span class="stars-text">(4.0)</span>
+                </div>
+            </div>
+
+            <div class="product-detail-price">
+                <span class="detail-price-old" style="display:none;"></span>
+                <span class="detail-price-new">Loading...</span>
+                <span class="detail-discount-badge" style="display:none;"></span>
+            </div>
+            <p id="product-stock-status"
+                style="font-family:var(--font-body); font-size:0.8rem; color:#4a9e4a; margin-bottom:4px;"></p>
+
+            <div class="product-detail-divider"></div>
+
+            <!-- Color Options — populated by shopify.js -->
+            <div id="color-section" style="display:none;">
+                <div class="option-label">Color</div>
+                <div class="color-options" id="color-options-container"></div>
+                <div id="selected-color-name"
+                    style="font-family:var(--font-body); font-size:0.78rem; color:var(--medium-text); margin-top:6px;">
+                </div>
+                <div class="product-detail-divider"></div>
+            </div>
+
+            <!-- Size Options — populated by shopify.js if applicable -->
+            <div id="size-section" style="display:none;">
+                <div class="option-label">Size / Blouse</div>
+                <div id="size-options-container" style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+                </div>
+                <div class="product-detail-divider"></div>
+            </div>
+
+            <div class="option-label">Quantity</div>
+            <div style="display:flex; align-items:center; gap:16px; margin-bottom:8px;">
+                <div class="qty-stepper">
+                    <button class="qty-minus" id="qty-minus-btn">−</button>
+                    <span class="qty-input" id="qty-display">1</span>
+                    <button class="qty-plus" id="qty-plus-btn">+</button>
+                </div>
+                <span id="qty-price-preview"
+                    style="font-family:var(--font-body); font-size:0.9rem; color:var(--medium-text);"></span>
+            </div>
+
+            <button class="add-to-cart-btn" id="detail-add-cart">ADD TO CART</button>
+            <div class="wishlist-link">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+                Add to Wishlist
+            </div>
+
+            <div class="product-detail-divider"></div>
+
+            <!-- Accordion — description populated by shopify.js -->
+            <div class="accordion-item">
+                <div class="accordion-header">Product Description <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner product-description-content">
+                        Loading product details...
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Material &amp; Care <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <strong>Care Instructions:</strong><br>
+                        &bull; Dry clean only for longevity<br>
+                        &bull; Store wrapped in a muslin cloth<br>
+                        &bull; Avoid direct sunlight for extended periods<br>
+                        &bull; Do not wring or squeeze<br>
+                        &bull; Iron on low heat on reverse side
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Shipping &amp; Returns <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        Free shipping on orders above &#8377;5,000.<br>
+                        Standard delivery in 4–6 business days.<br>
+                        Easy returns within 7 days of delivery.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Size Guide <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        Standard saree length: 5.5 meters (including blouse piece).<br>
+                        Width: 47 inches. Blouse piece: 0.8 meters.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end .product-detail-layout -->
+    <!-- YOU MAY ALSO LIKE — populated by shopify.js -->
+    <div class="container" style="padding:60px 0 40px;">
+        <h2 class="section-heading left" style="margin-bottom:28px;">You May Also Like</h2>
+        <div class="also-like-grid" id="also-like-grid"
+            style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+            <!-- Populated by shopify.js loadRelatedProducts() -->
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Redeem Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Vastraluu. Bangalore, Karnataka &bull; All Rights Reserved.</p>
+            <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="shopify.js"></script>
+
+    <script>
+        // updateQtyPricePreview — called by shopify.js after qty changes
+        function updateQtyPricePreview(qty) {
+            const priceEl = document.querySelector('.detail-price-new');
+            const preview = document.getElementById('qty-price-preview');
+            if (!priceEl || !preview || qty <= 1) { if (preview) preview.textContent = ''; return; }
+            const rawPrice = priceEl.dataset.rawPrice;
+            if (!rawPrice) return;
+            const total = parseFloat(rawPrice) * qty;
+            preview.textContent = '= ' + new Intl.NumberFormat('en-IN', { style: 'currency', currency: priceEl.dataset.currency || 'INR', maximumFractionDigits: 0 }).format(total);
+        }
+    </script>
+</body>
+
+</html>

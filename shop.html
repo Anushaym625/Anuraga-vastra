@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shop our complete collection of Kanchipuram silk sarees — Samudrika Pattu, Kalyana Pattu, Vastrakala Pattu and more.">
+    <title>Collections | Vastraluu — Kanchipuram Silk Sarees</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo">
+                <span class="brand-name">Vastraluu</span>
+                <span class="brand-sub">Silk & Sarees</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html" class="active">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="nav-icon" title="Search"><svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7" />
+                        <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                    </svg></div>
+                <a href="#" class="nav-icon" title="Wishlist"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></a>
+                <a href="cart.html" class="nav-icon" title="Cart"><svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="badge cart-badge" style="display:none;">0</span></a>
+                <a href="#" class="nav-login">Login / Register</a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-nav">
+        <span class="mobile-nav-close">✕</span>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Collections</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Shopping Bag</a>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero" style="height:220px;">
+        <img src="https://images.unsplash.com/photo-1583391265543-26b18a8ffe85?w=1600&q=80&auto=format&fit=crop"
+            alt="Silk sarees collection">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Our Collections</h1>
+            <p>Handcrafted Pure Kanchipuram Silk Sarees</p>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a><span>›</span><span>Collections</span>
+        </div>
+    </div>
+
+    <!-- Mobile Filter Toggle -->
+    <div class="container" style="padding-bottom:0; padding-top:0;">
+        <button class="filter-toggle-btn" style="margin-bottom:16px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <line x1="4" y1="6" x2="20" y2="6" />
+                <line x1="8" y1="12" x2="20" y2="12" />
+                <line x1="12" y1="18" x2="20" y2="18" />
+            </svg>
+            Filters
+        </button>
+    </div>
+
+    <div class="shop-layout">
+
+        <!-- SIDEBAR — Interactive Filters -->
+        <aside class="filter-sidebar" id="filter-sidebar">
+            <button class="filter-close-btn" id="filter-close-btn">&#10005;</button>
+            <div class="filter-heading">
+                Filters
+                <span id="clear-all-filters"
+                    style="font-size:0.72rem; font-weight:400; color:var(--primary-red); cursor:pointer; text-transform:none; letter-spacing:0;">Clear
+                    all</span>
+            </div>
+
+            <!-- Active filter chips -->
+            <div id="active-filters" style="display:none; flex-wrap:wrap; gap:6px; margin-bottom:12px;"></div>
+
+            <!-- Category (loaded from Shopify) -->
+            <div class="filter-section">
+                <div class="filter-section-title" onclick="this.parentElement.classList.toggle('collapsed')">
+                    Category <span class="filter-toggle-icon">−</span>
+                </div>
+                <div class="filter-options" id="filter-category-options">
+                    <div style="font-size:0.8rem; color:var(--light-text); padding:4px 0;">Loading collections...</div>
+                </div>
+            </div>
+
+            <!-- Price Range -->
+            <div class="filter-section">
+                <div class="filter-section-title" onclick="this.parentElement.classList.toggle('collapsed')">
+                    Price Range <span class="filter-toggle-icon">−</span>
+                </div>
+                <div class="price-range-wrapper" style="padding:0 4px;">
+                    <div
+                        style="display:flex; justify-content:space-between; font-family:var(--font-body); font-size:0.78rem; color:var(--medium-text); margin-bottom:6px;">
+                        <span>&#8377;<span id="price-min-label">0</span></span>
+                        <span>&#8377;<span id="price-max-label">50,000</span></span>
+                    </div>
+                    <div style="position:relative; height:28px;">
+                        <input type="range" id="price-range-min" min="0" max="50000" step="500" value="0"
+                            style="position:absolute; width:100%; pointer-events:none; background:transparent;"
+                            oninput="syncPriceRange(this,'min')">
+                        <input type="range" id="price-range-max" min="0" max="50000" step="500" value="50000"
+                            style="position:absolute; width:100%; pointer-events:none; background:transparent;"
+                            oninput="syncPriceRange(this,'max')">
+                    </div>
+                    <style>
+                        input[type=range]#price-range-min,
+                        input[type=range]#price-range-max {
+                            -webkit-appearance: none;
+                            height: 3px;
+                            border-radius: 2px;
+                            background: #e0d4c8;
+                            pointer-events: auto;
+                        }
+
+                        input[type=range]#price-range-min::-webkit-slider-thumb,
+                        input[type=range]#price-range-max::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background: var(--dark-text);
+                            cursor: pointer;
+                            border: 2px solid white;
+                            box-shadow: 0 1px 4px rgba(0, 0, 0, .2);
+                        }
+                    </style>
+                </div>
+            </div>
+
+            <!-- Color Swatches (interactive, multi-select) -->
+            <div class="filter-section">
+                <div class="filter-section-title" onclick="this.parentElement.classList.toggle('collapsed')">
+                    Color <span class="filter-toggle-icon">−</span>
+                </div>
+                <div class="filter-swatches" id="filter-color-swatches"
+                    style="display:flex; flex-wrap:wrap; gap:8px; padding:4px 0;">
+                    <!-- Populated by JS with consistent color map -->
+                </div>
+            </div>
+
+            <!-- Fabric -->
+            <div class="filter-section">
+                <div class="filter-section-title" onclick="this.parentElement.classList.toggle('collapsed')">
+                    Fabric <span class="filter-toggle-icon">−</span>
+                </div>
+                <div class="filter-options" id="filter-fabric-options">
+                    <label class="filter-checkbox"><input type="checkbox" value="pure silk" onchange="applyFilters()">
+                        Pure Silk</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="georgette" onchange="applyFilters()">
+                        Georgette</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="chiffon" onchange="applyFilters()">
+                        Chiffon</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="organza" onchange="applyFilters()">
+                        Organza</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="cotton silk" onchange="applyFilters()">
+                        Cotton Silk</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="crepe" onchange="applyFilters()">
+                        Crepe</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="khadi" onchange="applyFilters()">
+                        Khadi</label>
+                </div>
+            </div>
+
+            <!-- Occasion -->
+            <div class="filter-section">
+                <div class="filter-section-title" onclick="this.parentElement.classList.toggle('collapsed')">
+                    Occasion <span class="filter-toggle-icon">−</span>
+                </div>
+                <div class="filter-options" id="filter-occasion-options">
+                    <label class="filter-checkbox"><input type="checkbox" value="bridal" onchange="applyFilters()">
+                        Bridal</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="festival" onchange="applyFilters()">
+                        Festival</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="casual" onchange="applyFilters()">
+                        Casual</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="party" onchange="applyFilters()"> Party
+                        Wear</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="wedding" onchange="applyFilters()">
+                        Wedding Guest</label>
+                    <label class="filter-checkbox"><input type="checkbox" value="office" onchange="applyFilters()">
+                        Office Wear</label>
+                </div>
+            </div>
+
+            <button class="filter-apply-btn" onclick="applyFilters()">Apply Filters</button>
+        </aside>
+        
+
+        <!-- PRODUCT GRID -->
+        <div class="shop-main">
+            <div class="shop-top-bar">
+                <p class="shop-count">Showing <strong id="product-count">...</strong> products</p>
+                <div class="shop-sort">
+                    <label for="sort-select">Sort by:</label>
+                    <select id="sort-select">
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>New Arrivals</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- Products loaded dynamically from Shopify -->
+                <div id="shop-loading" style="grid-column:1/-1; text-align:center; padding:60px 20px; font-family:var(--font-body); color:var(--light-text); font-size:0.9rem;">
+                    <div style="width:32px;height:32px;border:2px solid var(--border-light);border-top-color:var(--dark-text);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 16px;"></div>
+                    Loading products...
+                </div>
+            </div>
+        </div>
+    </div><!-- end .shop-layout -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Redeem Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Bulk Orders</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Our Stores</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Vastraluu. Bangalore, Karnataka &bull; All Rights Reserved.</p>
+            <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="shopify.js"></script>
+    <script>
+        // Price range display
+        const priceRange = document.getElementById('price-range');
+        const priceVal = document.getElementById('price-val');
+        if (priceRange) priceRange.addEventListener('input', () => {
+            priceVal.textContent = '₹' + parseInt(priceRange.value).toLocaleString('en-IN');
+        });
+
+        // Filter swatch toggle
+        document.querySelectorAll('.filter-swatch').forEach(s => {
+            s.addEventListener('click', () => {
+                s.classList.toggle('active');
+            });
+        });
+
+        // Pagination
+        document.querySelectorAll('.page-btn:not(.prev):not(.next)').forEach(btn => {
+            btn.addEventListener('click', function () {
+                if (this.textContent === '...') return;
+                document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Vastraluu — Reach out with questions about our Kanchipuram silk sarees, orders, shipping, and more.">
+    <title>Contact Us | Vastraluu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="nav-logo"><span class="brand-name">Vastraluu</span><span
+                    class="brand-sub">Silk & Sarees</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Collections</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="nav-icon"><svg viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="7" />
+                        <line x1="16.5" y1="16.5" x2="22" y2="22" />
+                    </svg></div>
+                <a href="#" class="nav-icon"><svg viewBox="0 0 24 24">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg></a>
+                <a href="cart.html" class="nav-icon"><svg viewBox="0 0 24 24">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                        <line x1="3" y1="6" x2="21" y2="6" />
+                        <path d="M16 10a4 4 0 0 1-8 0" />
+                    </svg><span class="badge cart-badge" style="display:none;">0</span></a>
+                <a href="#" class="nav-login">Login / Register</a>
+            </div>
+            <div class="hamburger"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="mobile-overlay"></div>
+    <nav class="mobile-nav">
+        <span class="mobile-nav-close">✕</span>
+        <a href="index.html">Home</a><a href="shop.html">Collections</a><a href="about.html">About</a><a
+            href="contact.html">Contact</a><a href="cart.html">Shopping Bag</a>
+    </nav>
+
+    <!-- Page Hero -->
+    <div class="page-hero" style="height:200px;">
+        <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=1600&q=80&auto=format&fit=crop"
+            alt="Contact Vastraluu">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </div>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a><span>›</span><span>Contact</span>
+        </div>
+    </div>
+
+    <!-- CONTACT FORM + INFO -->
+    <div class="contact-layout">
+
+        <!-- FORM -->
+        <div>
+            <h2
+                style="font-family:var(--font-display); font-weight:600; font-size:1.8rem; margin-bottom:8px; color:var(--dark-text);">
+                Send Us a Message</h2>
+            <p
+                style="font-family:var(--font-body); font-weight:300; font-size:0.9rem; color:var(--medium-text); margin-bottom:36px;">
+                Fill in the form and our team will get back to you within 24 hours.</p>
+
+            <form id="contact-form">
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:0 24px;">
+                    <div class="field-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="field-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                </div>
+                <div class="field-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject...</option>
+                        <option>Order Inquiry</option>
+                        <option>Product Information</option>
+                        <option>Return / Exchange</option>
+                        <option>Bulk / Wholesale Orders</option>
+                        <option>Authenticity Certificate</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us how we can help you..."
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%; padding:16px;">SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <!-- INFO -->
+        <div>
+            <div class="map-placeholder">
+                📍 Kanchipuram, Tamil Nadu, India<br>
+                <small style="margin-top:8px; display:block; font-size:0.75rem; opacity:0.7;">Map View (Google Maps
+                    integration)</small>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="contact-info-label">Our Store</div>
+                    <div class="contact-info-value">12, Silk Weaver's Street,<br>Kanchipuram – 631 501,<br>Tamil Nadu,
+                        India</div>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="contact-info-label">Phone</div>
+                    <div class="contact-info-value">+91 44 2722 1234<br>+91 98400 56789 (WhatsApp)</div>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="contact-info-label">Email</div>
+                    <div class="contact-info-value">care@anayasilks.com<br>orders@anayasilks.com</div>
+                </div>
+            </div>
+
+            <div class="contact-info-item">
+                <div class="contact-icon">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="contact-info-label">Working Hours</div>
+                    <div class="contact-info-value">Monday – Saturday: 9:00 AM – 7:00 PM<br>Sunday: 10:00 AM – 5:00 PM
+                        (IST)</div>
+                </div>
+            </div>
+
+            <div class="social-icons-row">
+                <a href="#" class="social-icon-link" title="Facebook">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-link" title="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-link" title="Twitter / X">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-link" title="Pinterest">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12a10 10 0 0 0 6.44 9.32c-.09-.78-.17-1.98.04-2.84l1.2-5.08s-.31-.61-.31-1.52c0-1.42.83-2.49 1.86-2.49.88 0 1.3.66 1.3 1.45 0 .88-.56 2.21-.85 3.44-.24 1.03.51 1.87 1.52 1.87 1.82 0 3.22-1.92 3.22-4.7 0-2.45-1.76-4.17-4.27-4.17-2.91 0-4.62 2.18-4.62 4.44 0 .88.34 1.82.76 2.33.08.1.09.2.07.3l-.28 1.14c-.05.18-.16.22-.37.13-1.39-.65-2.26-2.68-2.26-4.32 0-3.51 2.55-6.74 7.36-6.74 3.86 0 6.86 2.75 6.86 6.42 0 3.83-2.41 6.91-5.75 6.91-1.12 0-2.18-.58-2.54-1.27l-.69 2.57c-.25.97-.93 2.18-1.38 2.91.04.01.09.01.13.01z" />
+                    </svg>
+                </a>
+                <a href="#" class="social-icon-link" title="YouTube">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.4 19.54C5.12 20 12 20 12 20s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <section class="faq-section">
+        <div style="max-width:720px; margin:0 auto;">
+            <h2 class="section-heading reveal" style="margin-bottom:12px;">Frequently Asked Questions</h2>
+            <p class="section-sub reveal" style="margin-bottom:40px;">Quick answers to common questions about our sarees
+                and service.</p>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">How do I know if a saree is genuine Kanchipuram silk? <span
+                        class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">Every Vastraluu saree comes with a Silk Mark certification
+                        issued by the Silk Mark Organisation of India (SMOI) — a government certification body. The silk
+                        mark tag is affixed to all our sarees before dispatch, guaranteeing 100% pure silk content. You
+                        can verify your certificate on the SMOI website using the unique code on your tag.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">What is your return and exchange policy? <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">We offer a hassle-free 15-day return and exchange policy. Items
+                        must be unused, in original condition, with all tags intact. To initiate a return, visit your
+                        account page or contact our support team. Refunds are processed within 5–7 working days. Please
+                        note that customized or altered sarees cannot be returned.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">Do you ship internationally? <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">Yes, we ship worldwide! International shipping rates and
+                        delivery times vary by destination. USA, UK, Canada, Australia, Singapore, and UAE typically
+                        take 7–12 business days via DHL Express. Import duties and taxes (if applicable) are borne by
+                        the customer and vary by country.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">Can I get a saree custom-woven? <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">Absolutely. We offer bespoke Kanchipuram silk sarees for
+                        special occasions such as weddings and milestone celebrations. Custom orders require a minimum
+                        lead time of 30–45 days and a 50% advance payment. Contact our design team via email at
+                        care@anayasilks.com to discuss your requirements and design preferences.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">How should I care for my silk saree? <span class="acc-icon">+</span></div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">Kanchipuram silk sarees should ideally be dry-cleaned by a
+                        specialist silk cleaner. If hand washing, use cool water with a gentle detergent designed for
+                        delicate fabrics. Never wring or tumble dry. Store your saree wrapped in white muslin cloth
+                        (never plastic) in a cool, dry place. Air your saree periodically to maintain its lustre.</div>
+                </div>
+            </div>
+
+            <div class="accordion-item reveal">
+                <div class="accordion-header">Do you offer bulk or wholesale orders? <span class="acc-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">Yes, we cater to boutiques, retailers, wedding planners, and
+                        corporate gifting. The minimum quantity for wholesale orders is 10 pieces. We offer attractive
+                        pricing for bulk orders along with custom labeling options. Please write to
+                        orders@anayasilks.com with your requirements for a custom quote.</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Account</h4>
+                <ul>
+                    <li><a href="#">Log In</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">Redeem Gift Card</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Info</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Vastraluu. Bangalore, Karnataka &bull; All Rights Reserved.</p>
+            <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="shopify.js"></script>
+    <script>
+        // Responsive form grid
+        const formGrid = document.querySelector('#contact-form [style*="grid-template-columns"]');
+        if (formGrid && window.innerWidth <= 600) {
+            formGrid.style.gridTemplateColumns = '1fr';
+        }
+    </script>
+</body>
+
+</html>
+
